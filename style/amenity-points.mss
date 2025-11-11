@@ -415,6 +415,12 @@
     marker-clip: false;
   }
 
+  [feature = 'amenity_library_dropoff'][zoom >= 16] {
+    marker-file: url('symbols/amenity/library_dropoff.svg');
+    marker-fill: @culture;
+    marker-clip: false;
+  }
+
   [feature = 'amenity_courthouse'][zoom >= 16] {
     marker-file: url('symbols/amenity/courthouse.svg');
     marker-fill: @public-service;
@@ -1695,6 +1701,7 @@
   }
 
   [feature = 'amenity_library'],
+  [feature = 'amenity_library_dropoff'],
   [feature = 'tourism_museum'],
   [feature = 'amenity_theatre'],
   [feature = 'amenity_cinema'],
